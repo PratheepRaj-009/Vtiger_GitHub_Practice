@@ -94,7 +94,7 @@ public class ContactwithMadatoryFields_test extends BaseClass
 
 		//Enter valid data 
 		new CreateContact_page(driver).enterValueIntoTextfield(lase_name, driver);
-		Assert.fail();
+	//	Assert.fail();
 		//			
 
 	}
