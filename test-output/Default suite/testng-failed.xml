@@ -3,18 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="contact.Contact_Test">
+      <class name="organization.CeateOrgWithIndustryDropdown_test">
         <methods>
           <include name="logoutFromApp"/>
           <include name="closeBrowser"/>
           <include name="loginToApp"/>
-          <include name="orgtwithMadatoryAndInd_test"/>
           <include name="launchBrowser"/>
-          <include name="contactwithMadatoryFields_test"/>
+          <include name="ceateOrgWithIndustryDropdown_test"/>
           <include name="disConnectDB"/>
           <include name="connectToDB"/>
         </methods>
-      </class> <!-- contact.Contact_Test -->
+      </class> <!-- organization.CeateOrgWithIndustryDropdown_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

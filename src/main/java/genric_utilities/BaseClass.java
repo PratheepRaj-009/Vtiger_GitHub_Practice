@@ -50,9 +50,9 @@ public class BaseClass
 	}
 
 	//Launching the Browser
-	@Parameters("BROWSER")
+	//@Parameters("BROWSER")
 	@BeforeClass(alwaysRun = true)
-	public void launchBrowser(@Optional("chrome") String Browser) throws IOException
+	public void launchBrowser(/*@Optional("chrome") String Browser*/) throws IOException
 	{
 		//Handling browser pop-ups
 		ChromeOptions chromeOpt = new ChromeOptions();
@@ -62,7 +62,7 @@ public class BaseClass
 		FirefoxOptions fireOpt = new FirefoxOptions();
 		fireOpt.addArguments("--diable-notification");
 
-		//String Browser = propUtil.readDataFromPropertyFile("browser");
+		String Browser = propUtil.readDataFromPropertyFile("browser");
 		String Url = propUtil.readDataFromPropertyFile("url");
 
 		if(Browser.contains("chrome"))
